@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: 'normal-font', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+}
+header .logo {
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+nav.open {
+    display: block;
+}
+
+.banner-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-slider {
+    display: flex;
+    width: 300%; /* Karena ada 3 gambar */
+    animation: slide 15s infinite;
+}
+
+.slide {
+    width: 100%; /* 100% dibagi 3 gambar */
+    padding: 0 10px;
+}
+
+.slide img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(280px);
+    }
+    33% {
+        transform: translateX(-26.33%);
+    }
+    66% {
+        transform: translateX(-59.66%);
+    }
+    100% {
+        transform: translateX(280px);
+    }
+}
+
+/* Features */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.features div {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    font-family: 'normal-font', sans-serif;
+}
+
+.features div a {
+    text-decoration: none;
+    font-size: 18px;
+    -webkit-text-stroke: 0.5px rgba(0,0,0,0.5);
+    font-weight: bold;
+    background: linear-gradient(45deg,
+rgb(255, 255, 255) 0%,
+rgb(245, 245, 0) 10%,
+rgb(235, 235, 0) 20%,
+rgb(225, 225, 0) 30%,
+rgb(215, 215, 0) 40%,
+rgb(205, 205, 0) 50%,
+rgb(195, 195, 0) 60%,
+rgb(185, 185, 0) 70%,
+rgb(175, 175, 0) 80%,
+rgb(165, 165, 0) 90%,
+rgb(155, 155, 0) 100%,
+rgb(145, 145, 0) 110%,
+rgb(135, 135, 0) 120%,
+rgb(125, 125, 0) 130%,
+rgb(115, 115, 0) 140%,
+rgb(105, 105, 0) 150%,
+rgb(95, 95, 0) 160%,
+rgb(85, 85, 0) 170%,
+rgb(75, 75, 0) 180%,
+rgb(65, 65, 0) 190%,
+rgb(55, 55, 0) 200%);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: 2s button-text ease infinite 0s;
+}
+@keyframes button-text {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: -200% 50%;
+        }
+    }    
+.profile {
+    border-radius: 50px;
+}
+/* .locked {
+    position: relative;
+    z-index: 1;
+    right: 300px;
+} */
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.wish {
+    background: url("../../images/background/background-button/background-wish-button.png");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.character {
+    background: url("../../images/background/background-button/background-characters-button.webp");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.element {
+    background: url("../../images/background/background-button/background-element-button.png");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.map {
+    background: url("../../images/background/background-button/background-map-button.png");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.weapon {
+    background: url("../../images/background/background-button/background-weapon-button.png");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.try-party {
+    background: url("../../images/background/background-button/background-tryparty-button.png");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tgc-genshin {
+    background: url("../../images/background/background-button/background-tgc-button.png");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.world {
+    background: url("../../images/background/background-button/background-world-button.png");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.artifact {
+    background: url("../../images/background/background-button/background-artifact-button.png");
+    width: fit-content; height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

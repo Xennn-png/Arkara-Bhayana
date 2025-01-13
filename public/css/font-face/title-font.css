@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'title-font';
+    src: url('./public/fonts/Genshin_Impact_DRIP.ttf') format('truetype');
+}
+
+body {
+    font-family: 'title-font', sans-serif; /* Terapkan font ini ke elemen body */
+}

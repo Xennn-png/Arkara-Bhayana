@@ -1,0 +1,23 @@
+footer {
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: auto;
+  max-height: 30px;
+  width: 100%;
+  position: fixed;
+  -webkit-backdrop-filter: blur(28px);
+  backdrop-filter: blur(28px);
+  opacity: 0.6;
+}
+footer p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "normal-font", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+  color: #000;
+  margin: 0;
+  opacity: 1;
+}

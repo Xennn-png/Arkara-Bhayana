@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('/public/fonts/Genshin Font.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyFont', sans-serif; /* Terapkan font ini ke elemen body */
+}
+
+<link rel="stylesheet" href="/public/css/font-face/genshin-font.css">
+<link rel="stylesheet" href="/public/css/font-face/title-font.css">
